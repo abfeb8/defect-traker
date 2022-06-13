@@ -8,7 +8,7 @@ function DefectTracker() {
   const [resultArray, setResult] = useState([]);
 
   useEffect(() => {
-    axios.get('defects.json')
+    axios.get('http://localhost:4000/defects')
       .then(res => setResult(res.data))
       .catch(error => console.log(error));
   }, []);

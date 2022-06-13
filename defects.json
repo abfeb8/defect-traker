@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "defects": [
+    {
+      "key": 1,
+      "cat": "UI",
+      "desc": "Submit button not working",
+      "priority": 1,
+      "status": "open",
+      "changeStatus": "Close Defect"
+    },
+    {
+      "key": 2,
+      "cat": "Functional",
+      "desc": "Submit button not working",
+      "priority": 2,
+      "status": "open",
+      "changeStatus": "Close Defect"
+    },
+    {
+      "key": 3,
+      "cat": "Change Request",
+      "desc": "Add remove user functionality",
+      "priority": 3,
+      "status": "closed",
+      "changeStatus": "No action pending"
+    }
+  ]
+}
