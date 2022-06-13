@@ -1,31 +1,6 @@
 function DefectViewTable(prop) {
   const searchSummery = "Search Result"
-  const resultArray = [
-    {
-      key: 1,
-      cat: "UI",
-      desc: "Submit button not working",
-      priority: 1,
-      status: "open",
-      changeStatus: "Close Defect"
-    },
-    {
-      key: 2,
-      cat: "Functional",
-      desc: "Submit button not working",
-      priority: 2,
-      status: "open",
-      changeStatus: "Close Defect"
-    },
-    {
-      key: 3,
-      cat: "Change Request",
-      desc: "Add remove user functionality",
-      priority: 3,
-      status: "closed",
-      changeStatus: "No action pending"
-    },
-  ];
+  const resultArray = prop.searchResult;
 
   return (
     <>
