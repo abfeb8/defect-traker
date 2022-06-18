@@ -18,28 +18,39 @@
   },
   "defects": [
     {
-      "key": 1,
-      "cat": "UI",
-      "desc": "Submit button not working",
+      "cat": "Change Request",
+      "desc": "Change the UI of tester's layout",
+      "priority": "2",
+      "status": "open",
+      "id": 10
+    },
+    {
+      "cat": "Functional",
+      "desc": "make filter logic to work",
+      "priority": "2",
+      "status": "open",
+      "id": 11
+    },
+    {
+      "cat": "Functional",
+      "desc": "add functionality to change defect status to something else (open, in-progress, blocked, closed)",
       "priority": 1,
       "status": "open",
-      "changeStatus": "Close Defect"
+      "id": 12
     },
     {
-      "key": 2,
-      "cat": "Functional",
-      "desc": "Submit button not working",
-      "priority": 2,
-      "status": "open",
-      "changeStatus": "Close Defect"
-    },
-    {
-      "key": 3,
       "cat": "Change Request",
-      "desc": "Add remove user functionality",
-      "priority": 3,
-      "status": "closed",
-      "changeStatus": "No action pending"
+      "desc": "check if routs are working as expected",
+      "priority": "2",
+      "status": "open",
+      "id": 13
+    },
+    {
+      "cat": "UI",
+      "desc": "make the UI look good",
+      "priority": "2",
+      "status": "open",
+      "id": 14
     }
   ]
 }
