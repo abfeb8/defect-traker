@@ -1,8 +1,8 @@
 import './App.css';
-import Login from './components/Login'
+import Login from './components/LoginForm'
 import DefectTracker from './components/DefectTracker'
-import AddDefect from './components/AddDefect';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import AddDefect from './components/AddDefectForm';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
@@ -22,6 +22,9 @@ function App() {
           } />
 
           <Route path="/addDefect" element={<AddDefect />} />
+
+          <Route path='*' element={<Login />} />
+
         </Routes>
       </BrowserRouter>
     </>

@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { BrowserRouter, Routes, Route, Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import DefectViewTable from "./DefectViewTable";
-import Form from "./Form";
-import AddDefect from "./AddDefect";
+import Form from "./DefectFilterForm";
+import AddDefect from "./AddDefectForm";
 
 function DefectTracker() {
 

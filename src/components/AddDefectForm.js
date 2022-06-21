@@ -1,23 +1,25 @@
 import { useRef, useState } from "react";
 import axios from "axios";
-import { BrowserRouter, Routes, Route, Link, useNavigate } from 'react-router-dom'
 
 function AddDefect(prop) {
-
-  let navigate = useNavigate();
 
   const category = useRef("UI");
   const description = useRef("");
   const [priority, setPriority] = useState(1);
 
   const submitHandeller = () => {
+    // creating new employe obj from the form inputs
     let emp = {
       cat: category.current.value,
       desc: description.current.value,
       priority: priority,
       status: "open",
     };
+
+    // posting emp object to db
     axios.post("http://localhost:4000/defects", emp).catch(exp => alert(exp));
+
+    // changing veiew back to defect table 
     prop.changeView("table")
   }
 
